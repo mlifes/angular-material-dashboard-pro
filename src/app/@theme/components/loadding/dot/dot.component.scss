@@ -1,0 +1,109 @@
+@keyframes dotLoadding{
+    0% {
+        height: 6px;
+        width: 6px;
+        background-color: gray;
+        -moz-box-shadow:0px 0px 3px #333333; 
+        -webkit-box-shadow:0px 0px 3px #333333; 
+        box-shadow:0px 0px 3px #333333;
+    }
+    25% {
+        height: 9px;
+        width: 9px;
+        background-color:green;
+        -moz-box-shadow:0px 0px 5px green; 
+        -webkit-box-shadow:0px 0px 5px green; 
+        box-shadow:0px 0px 5px green;
+    }
+}
+@-webkit-keyframes dotLoadding{
+    0% {
+        height: 6px;
+        width: 6px;
+        background-color: gray;
+        -moz-box-shadow:0px 0px 3px #333333; 
+        -webkit-box-shadow:0px 0px 3px #333333; 
+        box-shadow:0px 0px 3px #333333;
+    }
+    25% {
+        height: 9px;
+        width: 9px;
+        background-color:green;
+        -moz-box-shadow:0px 0px 5px green; 
+        -webkit-box-shadow:0px 0px 5px green; 
+        box-shadow:0px 0px 5px green;
+    }
+}
+
+@-moz-keyframes dotLoadding{
+    0% {
+        height: 6px;
+        width: 6px;
+        background-color: gray;
+        -moz-box-shadow:0px 0px 3px #333333; 
+        -webkit-box-shadow:0px 0px 3px #333333; 
+        box-shadow:0px 0px 3px #333333;
+    }
+    25% {
+        height: 9px;
+        width: 9px;
+        background-color:green;
+        -moz-box-shadow:0px 0px 5px green; 
+        -webkit-box-shadow:0px 0px 5px green; 
+        box-shadow:0px 0px 5px green;
+    }
+}
+
+.loadding{
+
+    position: relative;
+    height: 20px;
+    width: 80px;
+
+    & .dot:nth-child(1) div{
+        animation-delay: 0.3s;
+    }
+
+    & .dot:nth-child(2) div{
+        animation-delay: 0.45s;
+    }
+
+    & .dot:nth-child(3) div{
+        animation-delay: 0.55s;
+    }
+
+    & .dot:nth-child(4) div{
+        animation-delay: 0.7s;
+    }
+
+    .dot{
+
+        position: relative;
+        float: left;
+        height: 20px;
+        width: 20px;
+
+        div{
+            
+            position: absolute;
+            margin: auto;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+
+            height: 6px;
+            width: 6px;
+            border-radius: 50%;
+            background-color: gray;
+
+
+            animation: dotLoadding ease 1s infinite;
+            -webkit-animation: dotLoadding ease 1s infinite;
+            -moz-animation: dotLoadding ease 1s infinite;
+
+        }
+
+    }
+
+}

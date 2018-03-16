@@ -1,0 +1,49 @@
+<nav class="navbar navbar-metal navbar-static-top navbar-shadow-down">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#kt-pages-navbar-collapse" aria-expanded="false" (click)="navbarToggle()">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <p class="navbar-text navbar-left"><a href="/" class="navbar-link">KETTOA</a>的网络日志</p>
+    </div>
+    
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="kt-pages-navbar-collapse">
+
+        <ul class="nav navbar-nav">
+            <li><a href="/">首页</a></li>
+            <li><a href="/blog">博客</a></li>
+            <li><a href="/life">生活</a></li>
+            <li><a href="/admin">后台</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">其它<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="/books">书籍推荐</a></li>
+                <li><a href="/comment">游客评论</a></li>
+                <li><a href="/introduce">作者简介</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="/welfare">免费组件</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="/versions">版本更新</a></li>
+              </ul>
+            </li>
+          </ul>
+
+      <form class="navbar-form navbar-right" role="search">
+          <div class="form-group form-search is-empty">
+              <input type="text" class="form-control" placeholder="搜索">
+              <span class="material-input"></span>
+          </div>
+          <button type="submit" class="btn btn-white btn-round btn-just-icon">
+              <i class="material-icons">search</i>
+              <div class="ripple-container"></div>
+          </button>
+      </form>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>

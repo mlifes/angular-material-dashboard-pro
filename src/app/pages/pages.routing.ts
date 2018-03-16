@@ -1,26 +1,51 @@
-import { Routes } from '@angular/router';
+import { Routes } from "@angular/router";
+import { PagesComponent } from "app/pages/pages.component";
+import { HomeComponent } from "app/pages/home/home.component";
+import { BlogComponent } from "./blog/blog.component";
+import { CommentComponent } from "./comment/comment.component";
+import { IntroduceComponent } from "./introduce/introduce.component";
+import { WelfareComponent } from "./welfare/welfare.component";
+import { VersionsComponent } from "./versions/versions.component";
+import { BooksComponent } from "./books/books.component";
+import { LifeComponent } from "./life/life.component";
 
-import { RegisterComponent } from './register/register.component';
-import { PricingComponent } from './pricing/pricing.component';
-import { LockComponent } from './lock/lock.component';
-import { LoginComponent } from './login/login.component';
-
-export const PagesRoutes: Routes = [
-
+export const PagesRoutes : Routes = [
     {
-        path: '',
-        children: [ {
-            path: 'login',
-            component: LoginComponent
-        },{
-            path: 'lock',
-            component: LockComponent
-        },{
-            path: 'register',
-            component: RegisterComponent
-        },{
-            path: 'pricing',
-            component: PricingComponent
-        }]
+        path:'',
+        component:PagesComponent,
+        children:[
+            {
+                path:'',
+                component:HomeComponent
+            },
+            {
+                path:'blog',
+                component:BlogComponent
+            },
+            {
+                path:'life',
+                component:LifeComponent
+            },
+            {
+                path:'books',
+                component:BooksComponent
+            },
+            {
+                path:'comment',
+                component:CommentComponent
+            },
+            {
+                path:'introduce',
+                component:IntroduceComponent
+            },
+            {
+                path:'welfare',
+                component:WelfareComponent
+            },
+            {
+                path:'versions',
+                component:VersionsComponent
+            }
+        ]
     }
-];
+]

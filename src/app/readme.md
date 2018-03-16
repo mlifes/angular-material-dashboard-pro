@@ -1,0 +1,32 @@
+app文件夹主要内容
+===
+main.ts
+---
+    启动ts
+app.token.ts
+---
+    app的provide的token统一管理中心
+app.routing.ts
+---
+    app的路由模块
+app.module.ts
+---
+    app的根模块
+app.component
+---
+    app的根组件，仅包含路由插座router-outlet
+@core
+---
+    核心数据处理中心
+@theme
+---
+    web的主题中心
+admin
+---
+    后台管理页面
+aux
+---
+    辅助管理页面
+pages
+---
+    前台页面

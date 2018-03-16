@@ -436,15 +436,17 @@
 
         .open .dropdown-menu > li {
             & > a{
-                padding: 15px 15px 5px 50px;
+                padding: 10px 15px 10px 50px;
             }
 
             &:first-child > a{
-                padding: 5px 15px 5px 50px;
+
+                padding: 10px 15px 10px 50px;
             }
 
             &:last-child > a {
-                padding: 15px 15px 25px 50px;
+                // padding: 15px 15px 25px 50px;
+                padding: 10px 15px 10px 50px;
             }
         }
     }
@@ -684,6 +686,14 @@
         }
     }
 
+    .navbar{
+        .navbar-form{
+            position: relative;
+            .form-group{
+                margin-top: 12px;
+            }
+        }
+    }
     .navbar-form{
         .form-group{
             margin-bottom: 0;

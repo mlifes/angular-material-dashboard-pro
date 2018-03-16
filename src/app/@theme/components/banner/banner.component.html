@@ -1,0 +1,30 @@
+<!-- 包装盒 -->
+<div class="banner-wrapper" >
+  <!-- banner-viewport 视口 -->
+  <div class="banner-viewport" >
+    <!-- banner-guide 转换的导轨 -->
+    <div class="banner-guide">
+      <!-- banner-img 显示项 -->
+      <div class="banner-image" *ngFor="let item of dataInput;trackBy: $index" [style.width.px]="viewPortCW">
+        <img [src]="item.src" [title]="item.title">
+      </div>
+    </div>
+    <!-- banner-pager 显示页数 -->
+    <div class="banner-pager">
+      <!-- {{currentIndex}} -->
+      <div *ngFor="let item of dataInput ;trackBy : index ; let curIndex = index" [class.isSelected]="curIndex == (currentIndex - 1)" >{{curIndex + 1}}</div>
+    </div>
+    <!-- banner-nav 操作 -->
+    <div class="banner-nav left" (click)="stepBanner(false)">
+        <span class="glyphicon glyphicon-menu-left" aria-hidden="true" ></span>
+    </div>
+    <div class="banner-nav right" (click)="stepBanner(true)">
+        <span class="glyphicon glyphicon-menu-right" aria-hidden="true" ></span>
+    </div>
+
+  </div>
+  <!-- 缩略图 -->
+  <div class="banner-thumbnail">
+    缩略图
+  </div>
+</div>

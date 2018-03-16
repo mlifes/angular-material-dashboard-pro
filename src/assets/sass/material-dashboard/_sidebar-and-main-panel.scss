@@ -521,6 +521,9 @@
     .main-panel{
         overflow: auto;
     }
+    .sidebar .sidebar-wrapper:-webkit-scrollbar{
+        display: none
+    }
 }
 
 .visible-on-sidebar-regular{
